@@ -26,8 +26,10 @@ function Cart() {
             return (
             <div key={i} className='flex flex-row w-[100%] py-[20px] gap-[5px]'>
               <div className='flex-[4] flex flex-row xss:flex-[2] xs:flex-col xs:flex-[2]'>
+                
                 <img src={e.image} alt="" className='w-[35px] h-[35px] xs:w-[40px] xs:h-[40px]'/>
                 <p className='pl-[20px] w-[80%] xs:hidden'>{e.title}</p>
+
                 </div>
               <div className='flex-[1] xss:flex-[0] xss:hidden'><p>{e.price}</p></div>
               <div className='flex-[2] pl-[20px] xss:flex-[2] xs:flex-[1]'><p>{e.quantity}</p></div>

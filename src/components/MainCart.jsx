@@ -6,12 +6,22 @@ import { useDispatch } from "react-redux";
 const MainCart = () => {
   const state = useSelector((state) => state?.api?.data);
   const s = useSelector(s=>s)
-  const data = useSelector(state => state.cart)
   const dispatch = useDispatch()
 
-  // const add=(p)=>{
-  //   dispatch(addToCart(p))
+  // const arr = [2, 4, 6, 7, 8, 10, 12, 11]
+  // const n = arr.length
+  // for(let i=0; i<n; i++){
+  //   for(let j=0; j<arr.length; j++){
+  //     if(arr[j]%2===1){
+  //       arr.splice(j,1)
+  //     }
+  //   }
   // }
+  // let arr2 = [2, 4, 6, 7, 8, 10, 12, 11]
+  // arr2 = arr2.filter(e => e%2 === 0)
+  // console.log(arr)
+  // console.log(arr2)
+
   if(s.api.isError){
     return <div className="h-[calc(100vh-120px)] w-screen grid place-items-center">
       <h1 className="text-[5rem]">ERROR 404</h1>
