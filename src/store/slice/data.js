@@ -27,4 +27,4 @@ const appData = createSlice({
     
 })
 
-export {appData}
+export default appData.reducer

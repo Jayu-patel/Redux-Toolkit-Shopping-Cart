@@ -7,7 +7,12 @@ export default {
   mode: 'jit',
   theme: {
     screens: {
+      'xs3': {'min': '0px', 'max': '390px'},
+      
       'xs': {'min': '0px', 'max': '640px'},
+
+      'ss': {'min': '400px', 'max': '690px'},
+      
       'xss': {'min': '0px', 'max': '1000px'},
 
       'sm': {'min': '640px', 'max': '767px'},
